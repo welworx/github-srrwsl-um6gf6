@@ -1,0 +1,7 @@
+{
+  "name": "wb-easy-calc",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
