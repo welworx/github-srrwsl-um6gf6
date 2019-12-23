@@ -1,0 +1,226 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Data Input
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/nrw_header_image.png" alt="what is nrw" />
+    <ion-card-header>
+      <ion-card-subtitle>Easycalc</ion-card-subtitle>
+      <ion-card-title>Welcome to EasyCalc</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Please fill in the following data to estimate your water losses and costs. Feedback is always welcome! Please
+        contact Roland Liemberger directly.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="data-input-card">
+    <ion-card-header>
+      <ion-card-title>System Input Volume</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">System Input Volume (m³/d)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">SIV Accuracy Assessment</ion-label>
+          <ion-select value="" ok-text="Select" cancel-text="Close">
+            <ion-select-option value="X1">inflow meters in good condition</ion-select-option>
+            <ion-select-option value="X2">old inflow meters</ion-select-option>
+            <ion-select-option value="X3">inflow partially estimated</ion-select-option>
+            <ion-select-option value="X4">detailed estimate is available</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="data-input-card">
+    <ion-card-header>
+      <ion-card-title>Billed Consumption</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Metered (m³/d)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Unmetered</ion-label>
+          <ion-select value="" ok-text="Select" cancel-text="Close">
+            <ion-select-option value="X1">detailed calculations available</ion-select-option>
+            <ion-select-option value="X2">use default value</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Calculated Unmetered Value (m³/d)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="data-input-card">
+    <ion-card-header>
+      <ion-card-title>Unbilled Consumption</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Metered (m³/d)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Unmetered</ion-label>
+          <ion-select value="" ok-text="Select" cancel-text="Close">
+            <ion-select-option value="X1">detailed calculations available</ion-select-option>
+            <ion-select-option value="X2">use default value</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Calculated Unmetered Value (m³/d)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="data-input-card">
+    <ion-card-header>
+      <ion-card-title>Commercial Losses</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Costumer Meter Under-Registration (m³/d)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Illegal Connections</ion-label>
+          <ion-select value="" ok-text="Select" cancel-text="Close">
+            <ion-select-option value="X1">no problem</ion-select-option>
+            <ion-select-option value="X2">moderate problem (1-5%)</ion-select-option>
+            <ion-select-option value="X2">significant problem (>5%)</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="data-input-card">
+    <ion-card-header>
+      <ion-card-title>Infrastructure</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Pipeline Length (km)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Numer of Accounts (Customers)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Numer of Service Connections</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="data-input-card">
+    <ion-card-header>
+      <ion-card-title>Level of Service</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-item>
+          <ion-label position="floating">Pressure</ion-label>
+          <ion-select value="" ok-text="Select" cancel-text="Close">
+            <ion-select-option value="X1">pressure is very low</ion-select-option>
+            <ion-select-option value="X2">in some parts the pressure is too low</ion-select-option>
+            <ion-select-option value="X3">pressure is reasonable</ion-select-option>
+            <ion-select-option value="X4">high pressure</ion-select-option>
+            <ion-select-option value="X4">the average pressure based on measurement is</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Measured Average Pressure (m head)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Supply Time</ion-label>
+          <ion-select value="" ok-text="Select" cancel-text="Close">
+            <ion-select-option value="X1">24 h/d</ion-select-option>
+            <ion-select-option value="X2">1-3 h/d</ion-select-option>
+            <ion-select-option value="X3">3-6 h/d</ion-select-option>
+            <ion-select-option value="X4">6-12 h/d</ion-select-option>
+            <ion-select-option value="X5">12-18 h/d</ion-select-option>
+            <ion-select-option value="X6">18-24 h/d</ion-select-option>
+            <ion-select-option value="X7">average is known</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Average Suppy Time (h/d)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <ion-card class="data-input-card">
+    <ion-card-header>
+      <ion-card-title>Financials</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating">Average Tariff (USD/m³)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Variable Production and Distribution Cost (USD/m³)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Annual Operating Cost (USD/m³)</ion-label>
+          <ion-input type="number"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">How shall recovered physical losses be valued?</ion-label>
+
+          <ion-range min="-200" max="200" color="secondary">
+            <ion-label slot="start">-200</ion-label>
+            <ion-label slot="end">200</ion-label>
+          </ion-range>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
